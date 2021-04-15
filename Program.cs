@@ -7,11 +7,12 @@ namespace hwfirst
     {
         static void hash(string input)
         {
-            var regex = new Regex(@"@\w+");
-            var regex1 = new Regex(@"#\w+");
-            var matches = regex.Matches(input);
-            var matches1 = regex1.Matches(input);
-
+            var at = new Regex(@"@\w+");
+            var hash = new Regex(@"#\w+");
+            var matches = at.Matches(input);
+            var matches1 = hash.Matches(input);
+            
+            // loop to see the matches from the input
             foreach (var match in matches)
             {
 
