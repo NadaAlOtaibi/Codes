@@ -1,4 +1,6 @@
-﻿using System;
+// This code to get the input(tweet) from the user and display hash & mention in the tweet
+
+using System;
 using System.IO;
 using System.Text.RegularExpressions;
 namespace hwfirst
