@@ -13,7 +13,6 @@ namespace wajep
         MOBILE GetMobile();
     }
 
-    // This is the product class for Toy.
 
     public class MOBILE
     {
