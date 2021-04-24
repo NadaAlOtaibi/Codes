@@ -39,7 +39,7 @@ namespace list
                 Console.WriteLine("Enter your grade:");
                 int Grade1 = Convert.ToInt32(Console.ReadLine());
                 ListS[i].Grade = Grade1;
-                Console.WriteLine("Do you want to enter another student? Write No to exist");
+                Console.WriteLine("Do you want to enter another student? Write No to exit");
                 string responce = Console.ReadLine();
                 
                     if (responce == "No" || responce == "NO" || responce == "no")
