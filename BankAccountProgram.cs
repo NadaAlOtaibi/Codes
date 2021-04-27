@@ -179,7 +179,6 @@ namespace Progchallenge
                 checking.Withdraw(3000.0m);
 
 
-                // 2.650 and 988.63
                 Console.WriteLine($"Checking balance is {checking.Balance:C2}");
                 Console.WriteLine($"Savings balance is {saving.Balance:C2}");
             }
