@@ -10,11 +10,9 @@ namespace RegularExpression
     
         static void Main(string[] args)
         {
-            Console.WriteLine("Write a number:");
-            has = Console.ReadLine();
-
+        
             string has;
-            Console.WriteLine("Write a number:");
+            Console.WriteLine("Write a number to check:");
             has = Console.ReadLine();
 
             string pattern = @"[#][0-9A-Fa-f]{6}";
