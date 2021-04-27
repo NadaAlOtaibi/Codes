@@ -43,14 +43,14 @@ namespace Progchallenge
             {
                 if (amount > Balance)
                 {
-                    //   Console.WriteLine("Denied");
+                     Console.WriteLine("Denied");
 
                 }
                 else
                 {
                     Balance += amount;
 
-                     //  Console.WriteLine("accepted");
+                     Console.WriteLine("accepted");
                 }
             }
 
