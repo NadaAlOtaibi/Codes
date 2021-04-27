@@ -4,23 +4,31 @@ using System;
 
 namespace Progchallenge
 {
-    abstract class BankAccont
+      abstract class BankAccont
     {
-        private string AccountOwner;
+        private string firstName;
         private string lastName;
         public decimal Balance;
 
+        public string AccountOwner
+        {
+            get => $"{firstName} {lastName}";
+        }
         public BankAccont(string f, string l, decimal la)
         {
-            AccountOwner = f;
+            firstName = f;
             lastName = l;
-            Balance = la;  }
+            Balance = la;
+
+        }
 
         public abstract void Deposit(decimal amount);
 
 
 
         public abstract void Withdraw(decimal amount);
+
+
 
 
 
@@ -34,7 +42,7 @@ namespace Progchallenge
             {
 
 
-                AccountOwner = f;
+                firstName = f;
                 lastName = l;
                 Balance = la;
             }
@@ -43,14 +51,14 @@ namespace Progchallenge
             {
                 if (amount > Balance)
                 {
-                     Console.WriteLine("Denied");
+                    //   Console.WriteLine("Denied");
 
                 }
                 else
                 {
                     Balance += amount;
 
-                     Console.WriteLine("accepted");
+                     //  Console.WriteLine("accepted");
                 }
             }
 
@@ -87,7 +95,7 @@ namespace Progchallenge
             public CheckingAcct(string f, string l, decimal la) : base(f, l, la)
                 {
 
-                    AccountOwner = f;
+                     firstName = f;
                     lastName = l;
                     Balance = la;
                 }
@@ -123,6 +131,8 @@ namespace Progchallenge
                     if (count > 3)
                         Balance = Balance - 2;
                       Console.WriteLine("accepted");
+
+
 
 
                 }
