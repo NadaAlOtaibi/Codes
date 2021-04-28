@@ -5,7 +5,7 @@ namespace doubleRef
     class Program
     {
 
-        static void funv(ref int num ) {
+        static void funcDouble(ref int num ) {
             num *= num;
             Console.WriteLine(num);
 
@@ -17,7 +17,7 @@ namespace doubleRef
      
            Console.WriteLine("Write a number to make it double");
            int num = Convert.ToInt32(Console.ReadLine());
-               funv(ref num);
+               funcDouble(ref num);
 
 
         }
