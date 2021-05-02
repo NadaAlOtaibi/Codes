@@ -9,7 +9,7 @@ namespace Nadawa
 
         //ABBA > 2
         //ABB  > 1
-        public static int mep(string l)
+        public static int socksMatch(string l)
 
         {
             char[] chars = l.ToCharArray();
@@ -30,7 +30,7 @@ namespace Nadawa
 
         static void Main(string[] args)
             {
-            Console.WriteLine(mep("1122"));
+            Console.WriteLine(socksMatch("1122"));
 
             }
         } }
