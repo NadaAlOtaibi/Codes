@@ -17,15 +17,15 @@ namespace FileNada
             Console.WriteLine("Enter your file name.");
             string Fname = Console.ReadLine();
 
-            StreamWriter in = new StreamWriter("/Users/nadaalotaibi/Desktop/NadaFile/" + Fname + ".txt");
-            in.WriteLine(name);
+            StreamWriter inp = new StreamWriter("/Users/nadaalotaibi/Desktop/NadaFile/" + Fname + ".txt");
+            inp.WriteLine(name);
 
             using (StreamWriter outputFile = new StreamWriter(Path.Combine(History), true))
             {
                 outputFile.WriteLine($" {name} created {Fname}.txt {DateTime.Now} \n");
             }
         
-            in.Flush();
+            inp.Flush();
 
             Console.WriteLine("Edit an existed File");
             in.WriteLine(Console.ReadLine());
@@ -33,8 +33,8 @@ namespace FileNada
             {
                 outputFile.WriteLine($" {name} edited {Fname}.txt {DateTime.Now} \n");
             }
-            in.Flush();
-            in.Close();
+            inp.Flush();
+            inp.Close();
             Console.WriteLine("Delete file?y/n");
             string ch = Console.ReadLine();
             if (ch == "y" || ch == "Y")
