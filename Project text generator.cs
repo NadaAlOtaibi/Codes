@@ -28,7 +28,7 @@ namespace FileNada
             inp.Flush();
 
             Console.WriteLine("Edit an existed File");
-            in.WriteLine(Console.ReadLine());
+            inp.WriteLine(Console.ReadLine());
             using (StreamWriter outputFile = new StreamWriter(Path.Combine(History), true))
             {
                 outputFile.WriteLine($" {name} edited {Fname}.txt {DateTime.Now} \n");
