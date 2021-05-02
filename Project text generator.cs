@@ -11,7 +11,7 @@ namespace FileNada
 
 
             Console.WriteLine("Welcome to text generator :D!");
-            Console.WriteLine("Enter your name.");
+            Console.WriteLine("Enter your name");
             string name = Console.ReadLine();
             string History = "/Users/nadaalotaibi/Desktop/NadaFile/History.txt";
             Console.WriteLine("Enter your file name.");
