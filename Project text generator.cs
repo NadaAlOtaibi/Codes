@@ -18,7 +18,7 @@ namespace FileNada
             string Fname = Console.ReadLine();
 
             StreamWriter in = new StreamWriter("/Users/nadaalotaibi/Desktop/NadaFile/" + Fname + ".txt");
-            sw.WriteLine(name);
+            in.WriteLine(name);
 
             using (StreamWriter outputFile = new StreamWriter(Path.Combine(History), true))
             {
