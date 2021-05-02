@@ -17,7 +17,7 @@ namespace FileNada
             Console.WriteLine("Enter your file name.");
             string Fname = Console.ReadLine();
 
-            StreamWriter sw = new StreamWriter("/Users/nadaalotaibi/Desktop/NadaFile/" + Fname + ".txt");
+            StreamWriter in = new StreamWriter("/Users/nadaalotaibi/Desktop/NadaFile/" + Fname + ".txt");
             sw.WriteLine(name);
 
             using (StreamWriter outputFile = new StreamWriter(Path.Combine(History), true))
@@ -25,16 +25,16 @@ namespace FileNada
                 outputFile.WriteLine($" {name} created {Fname}.txt {DateTime.Now} \n");
             }
         
-            sw.Flush();
+            in.Flush();
 
             Console.WriteLine("Edit an existed File");
-            sw.WriteLine(Console.ReadLine());
+            in.WriteLine(Console.ReadLine());
             using (StreamWriter outputFile = new StreamWriter(Path.Combine(History), true))
             {
                 outputFile.WriteLine($" {name} edited {Fname}.txt {DateTime.Now} \n");
             }
-            sw.Flush();
-            sw.Close();
+            in.Flush();
+            in.Close();
             Console.WriteLine("Delete file?y/n");
             string ch = Console.ReadLine();
             if (ch == "y" || ch == "Y")
