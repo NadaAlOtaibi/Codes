@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+
+   <body>
+      <canvas id="Canvas" width="500" height="300"></canvas>
+      <script>
+         var canvas = document.getElementById('Canvas');
+         var Star = canvas.getContext('2d');
+         Star.fillStyle = "Pink";
+         Star.beginPath();
+         Star.moveTo(108, 0.0);
+         Star.lineTo(141, 70);
+         Star.lineTo(218, 78.3);
+         Star.lineTo(162, 131);
+         Star.lineTo(175, 205);
+         Star.lineTo(108, 170);
+         Star.lineTo(41.2, 205);
+         Star.lineTo(55, 131);
+         Star.lineTo(1, 78);
+         Star.lineTo(75, 68);
+         Star.lineTo(108, 0);
+         Star.closePath();
+         Star.fill();
+
+         
+      </script>
+   </body>
+</html>
